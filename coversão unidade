@@ -1,0 +1,24 @@
+/*
+ALGORITMO: CONVERSÃO DE UNIDADES
+Escrever um algoritmo em C que leia a comprimento de uma (1) barra em centímetro
+e exiba na tela sua dimensão em:
+  -> Polegadas
+  -> pés
+Sabendo que, 1 Polegada = 2.54 Centímetros = 0.08 pés (ft).
+*/
+#include <stdio.h>
+#include <stdlib.h>
+int main(void) {
+  // ALGORITMO: ENTRADA + ULA + SAÍDA
+  float comprimento;
+  printf("Entre com o comprimento de uma (1) barra em centímetro: ");
+  scanf("%f", &comprimento);
+  // PROCESSAMENTO + SAÍDA
+  comprimento = comprimento / 2.54 ;//polegadas
+  printf("Medida da Barra em Polegadas: %.2f\n", comprimento);
+
+  comprimento *= 0.08; //pés
+  
+
+  return 0;
+}
